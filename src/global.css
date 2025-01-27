@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .h-screen-90{
+        height: 92vh;
+    }
+    .bg-vermelho{
+        background-color: #b00000;
+    }
+    .border-vermelho{
+        border-color: #b00000;
+    }
+    .outline-vermelho{
+        outline-color: #b00000;
+    }
+    .text-vermelho{
+        color: #b00000;
+    }
+    .shadow-vermelho{
+        box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(240, 46, 46, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+    .shadow-vermelho-sm{
+        box-shadow: rgba(240, 46, 46, 0.4) 3px 3px, rgba(240, 46, 46, 0.3) 6px 6px, rgba(240, 46, 46, 0.2) 9px 9px, rgba(240, 46, 170, 0.1) 12px 12px, rgba(240, 46, 170, 0.05) 15px 15px;
+    }
+
+    .bg-g-1{
+        background: rgb(244,244,244);
+background: linear-gradient(0deg, rgba(244,244,244,1) 0%, rgba(229,231,235,1) 100%);
+    }
+
+    .bg-g-2{
+        background: rgb(255,240,240);
+        background: linear-gradient(0deg, rgba(255,240,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    
+    .hero {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    
+    .baner-quem-somos {
+        margin-top: 2rem;
+    }
+    .box-quem-somos {
+        padding: 3rem 0;
+    }
+    .foto{
+        max-width: 20rem;
+    }
+    .galeria{
+        padding-top: 0;
+    }
+}
